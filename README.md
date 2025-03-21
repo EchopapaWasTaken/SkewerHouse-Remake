@@ -9,4 +9,4 @@
 
 ## Hero Header
 - Implemented Hero Section, importing video taken directly from Skewer House original website.
-- Created a <h2> and <p> with flavour text.
+- Created a h2 and p with flavour text.
