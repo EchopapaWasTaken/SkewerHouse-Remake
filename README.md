@@ -1,5 +1,6 @@
-<<<<<<< 24/03/2025---Welcome-Section,-ourStory-and-CSS-Ammendments
+
 # Patchnotes 24/03/25
+# Branch Name "24/03/25
 ## NavBar
 - Fixed NavBar to have consistent styling across all pages
 - Added "Our Story" with appropriate link on NavBar
@@ -23,6 +24,7 @@
 - welcome-section properties contain placeholder content (e.g. colours) until further CSS customisation is implemented.
 =======
 # Patchnotes 21/03/25
+# Branch Name "main"
 ## Initial VSCode Setup
 - Created initial files (index.html, styles.css, skewerhousejs.js, menu.html and contact.html) 
 - Added Bootstrap CSS and JS Functionality
@@ -34,4 +36,4 @@
 ## Hero Header
 - Implemented Hero Section, importing video taken directly from Skewer House original website.
 - Created a h2 and p with flavour text.
->>>>>>> main
+
