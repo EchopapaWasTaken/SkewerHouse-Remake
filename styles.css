@@ -30,12 +30,22 @@ body {
   object-fit: cover;
   z-index: 0;
 }
-.hero-content{
-  position: relative;
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
   z-index: 1;
 }
 
-/* Style for text content (optional) */
+.hero-content{
+  position: relative;
+  z-index: 2;
+}
+
 .hero h2 {
   font-size: 3em;
   margin-bottom: 20px;
@@ -43,7 +53,79 @@ body {
 
 .hero p {
   font-size: 1.2em;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   border-radius: 8px;
+}
+
+.welcome-section {
+  padding: 20px 0;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.welcome-section img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 40%;
+  opacity: 0.2;
+  margin-right: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.welcome-section-text {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 55%;
+  text-align: right;
+}
+
+.welcome-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.welcome-section .button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.welcome-section .button:hover {
+  background-color: #367c39;
+  /* Placeholder until I style buttons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .welcome-section {
+    flex-direction: column;
+    text-align: left; /* Change to left alignment on small screens */
+  }
+
+  .welcome-section img {
+    max-width: 80%;
+    margin-bottom: 20px;
+    margin-right: auto; /* Push image to the left on small screens*/
+  }
+
+  .welcome-section-text {
+    position: absolute; /* Keep absolute positioning on small screens */
+    top: 20px;
+    right: 20px;
+    width: 80%; /* Adjust width as needed on small screens */
+    text-align: right; /* Keep right alignment on small screens */
+  }
 }
