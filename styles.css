@@ -142,6 +142,7 @@ body {
 /*Specials Section Start */
 .specials-section {
   background-color: #FFFCF9;
+  margin-bottom: 100px;
 }
 .specials-section-content {
   justify-content: center;
