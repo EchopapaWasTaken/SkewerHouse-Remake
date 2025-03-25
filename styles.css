@@ -143,3 +143,20 @@ body {
 .specials-section {
   background-color: #FFFCF9;
 }
+.specials-section-content {
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.specials-button {
+  margin-right: 8px;
+}
+.price-tag {
+  font-weight: bold;
+}
+.specials-full-menu-button {
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
