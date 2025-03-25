@@ -160,3 +160,7 @@ body {
   text-align: center;
   padding-bottom: 20px;
 }
+.specials-button.active {
+  background-color: #007bff; /* Example active button style */
+  color: white;
+}

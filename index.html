@@ -90,60 +90,184 @@
   <!-- Specials Section showcasing Skewer House Specials -->
   <section class="specials-section">
     <div class="container-fluid">
-      <div class="specials-section-content">
-        <h1>Our Specials</h1>
-        <button class="specials-button" type="button">Food</button>
-        <button class="specials-button" type="button">Drinks</button>
-        <button class="specials-button" type="button">Extras</button>
-        <button class="specials-button" type="button">Dessert</button>
-      </div>
-      <!-- Imported Bootstrap Cards with custom Container -->
-      <div class="specials-section-cards">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-auto mb-4" style="max-width: 18rem;">
-                <div class="card d-flex flex-column" style="width: 100%;">
-                    <div style="height: 150px; overflow: hidden;">
-                        <img class="card-img-top" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/36/17/4f/sharer-starter.jpg?w=1400&h=800&s=1" alt="Card image cap" style="width: 100%; object-fit: cover;">
+        <div class="specials-section-content">
+            <h1>Our Specials</h1>
+            <button class="specials-button active" type="button" data-category="food">Food</button>
+            <button class="specials-button" type="button" data-category="drinks">Drinks</button>
+            <button class="specials-button" type="button" data-category="extras">Extras</button>
+            <button class="specials-button" type="button" data-category="dessert">Dessert</button>
+        </div>
+        <div class="card-sets">
+          <!-- Start of Food Card Selection -->
+            <div class="specials-section-cards" data-category="food">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-auto mb-4" style="max-width: 18rem;">
+                        <div class="card d-flex flex-column" style="width: 100%;">
+                            <div style="height: 150px; overflow: hidden;">
+                                <img class="card-img-top" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/36/17/4f/sharer-starter.jpg?w=1400&h=800&s=1" alt="Chourico & Olives" style="width: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-body flex-grow-1">
+                                <h5 class="card-title">Flamed Chourico, Olives & Flat Bread</h5>
+                                <p class="card-text">Flamed Churico, with Marinated Olives, Flat Bread w/ Garlic Butter and choice of sauce.</p>
+                                <p class="price-tag">From £14.99</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body flex-grow-1">
-                        <h5 class="card-title">Flamed Chourico, Olives & Flat Bread</h5>
-                        <p class="card-text">Flamed Churico, with Marinated Olives, Flat Bread w/ Garlic Butter and choice of sauce.</p>
-                        <p class="price-tag">From £14.99</p>
+                    <div class="col-12 col-md-auto mb-4" style="max-width: 18rem;">
+                        <div class="card d-flex flex-column" style="width: 100%;">
+                            <div style="height: 150px; overflow: hidden;">
+                                <img class="card-img-top" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/b4/72/f6/skewer-house.jpg?w=900&h=-1&s=1" alt="Veg & Halloumi" style="width: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-body flex-grow-1">
+                                <h5 class="card-title">Vegetables & Halloumi</h5>
+                                <p class="card-text">Vegetables and halloumi baked on our saffron, with basmati rice, sweetcorn and meat or fish of choice.</p>
+                                <p class="price-tag">From £19.99</p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-             <div class="col-12 col-md-auto mb-4" style="max-width: 18rem;">
-                <div class="card d-flex flex-column" style="width: 100%;">
-                    <div style="height: 150px; overflow: hidden;">
-                        <img class="card-img-top" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/b4/72/f6/skewer-house.jpg?w=900&h=-1&s=1" alt="Card image cap" style="width: 100%; object-fit: cover;">
-                    </div>
-                    <div class="card-body flex-grow-1">
-                        <h5 class="card-title">Vegetables & Halloumi</h5>
-                        <p class="card-text">Vegetables and halloumi baked on our saffron, with basmati rice, sweetcorn and meat or fish of choice,</p>
-                        <p class="price-tag">From £19.99</p>
-                    </div>
-                   </div>
-                  </div>
-                  <div class="col-12 col-md-auto mb-4" style="max-width: 18rem;">
-                 <div class="card d-flex flex-column" style="width: 100%;">
-                    <div style="height: 150px; overflow: hidden;">
-                        <img class="card-img-top" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/60/20/20/flaming-chourico-bolo.jpg?w=900&h=500&s=1" alt="Card image cap" style="width: 100%; object-fit: cover;">
-                    </div>
-                    <div class="card-body flex-grow-1">
-                        <h5 class="card-title">Starter Platter</h5>
-                        <p class="card-text">Variety of 'tear and share' garlic bread assortments and dips, accompinied with up to 4 drinks of choice.</p>
-                        <p class="price-tag">From £11.99</p>
+                    <div class="col-12 col-md-auto mb-4" style="max-width: 18rem;">
+                        <div class="card d-flex flex-column" style="width: 100%;">
+                            <div style="height: 150px; overflow: hidden;">
+                                <img class="card-img-top" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/60/20/20/flaming-chourico-bolo.jpg?w=900&h=500&s=1" alt="Starter Platter" style="width: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-body flex-grow-1">
+                                <h5 class="card-title">Starter Platter</h5>
+                                <p class="card-text">Variety of 'tear and share' garlic bread assortments and dips, accompinied with up to 4 drinks of choice.</p>
+                                <p class="price-tag">From £11.99</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Start of Drink Card Selection -->
+            <div class="specials-section-cards" data-category="drinks" style="display: none;">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-auto mb-4" style="max-width: 18rem;">
+                    <div class="card d-flex flex-column" style="width: 100%;">
+                        <div style="height: 150px; overflow: hidden;">
+                            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO0XMv9QPHmQbe6w4pOvuRPJZfT7U11yigEg&s" alt="Cocktail Selection" style="width: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body flex-grow-1">
+                            <h5 class="card-title">Summer Cocktail Selection</h5>
+                            <p class="card-text">Fruity and Fresh Cocktails, ideal for a classy night out!</p>
+                            <p class="price-tag">From £12.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-auto mb-4" style="max-width: 18rem;">
+                    <div class="card d-flex flex-column" style="width: 100%;">
+                        <div style="height: 150px; overflow: hidden;">
+                            <img class="card-img-top" src="https://ca-times.brightspotcdn.com/dims4/default/3163b27/2147483647/strip/true/crop/5919x3945+0+0/resize/2000x1333!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fa3%2Fe3%2F605ea47843ad8f51d378e925b0bb%2F1389428-fo-na-cocktails-kato13-mam.jpg" alt="Smoothie Selection" style="width: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body flex-grow-1">
+                            <h5 class="card-title">Summer Smoothie Selection</h5>
+                            <p class="card-text">Freshly prepared smoothies using fresh fruit & veg!</p>
+                            <p class="price-tag">From £9.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-auto mb-4" style="max-width: 18rem;">
+                    <div class="card d-flex flex-column" style="width: 100%;">
+                        <div style="height: 150px; overflow: hidden;">
+                            <img class="card-img-top" src="https://rasulrestaurantanddesserts.co.uk/wp-content/uploads/2023/10/BEVERAGES.jpg" alt="Soft Drink Selection" style="width: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body flex-grow-1">
+                            <h5 class="card-title">Soft Drink Selection</h5>
+                            <p class="card-text">Choice of up to 4 non-alcoholic drinks, perfect for a family outing!</p>
+                            <p class="price-tag">From £6.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- Start of Extras Card Selection -->
+            <div class="specials-section-cards" data-category="extras" style="display: none;">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-auto mb-4" style="max-width: 18rem;">
+                    <div class="card d-flex flex-column" style="width: 100%;">
+                        <div style="height: 150px; overflow: hidden;">
+                            <img class="card-img-top" src="https://i.pinimg.com/736x/23/22/ae/2322aecdf16b9a14c41c5a5f2b9747af.jpg" alt="Garlic Flatbread" style="width: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body flex-grow-1">
+                            <h5 class="card-title">Garlic Flatbread</h5>
+                            <p class="card-text">Handmade Garlic Flatbread with selection of toppings, /w option for dips.</p>
+                            <p class="price-tag">From £2.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-auto mb-4" style="max-width: 18rem;">
+                    <div class="card d-flex flex-column" style="width: 100%;">
+                        <div style="height: 150px; overflow: hidden;">
+                            <img class="card-img-top" src="https://stordfkenticomedia.blob.core.windows.net/df-us/rms/media/recipesmedia/recipes/retail/desktopimages/2012/may/sweet_potato_fries-600.jpg?ext=.jpg" alt="Sweet Potato Fries" style="width: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body flex-grow-1">
+                            <h5 class="card-title">Sweet Potato Fries</h5>
+                            <p class="card-text">Handmade Sweet Potato Fries with crispy texture, salt, pepper and paprika flavouring.</p>
+                            <p class="price-tag">From £3.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-auto mb-4" style="max-width: 18rem;">
+                    <div class="card d-flex flex-column" style="width: 100%;">
+                        <div style="height: 150px; overflow: hidden;">
+                            <img class="card-img-top" src="https://cdn.loveandlemons.com/wp-content/uploads/2021/04/green-salad.jpg" alt="Side Salad" style="width: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body flex-grow-1">
+                            <h5 class="card-title">Side Salad</h5>
+                            <p class="card-text">Fresh fruit and veg from local farmers market, with delicious salad dressing.</p>
+                            <p class="price-tag">From £3.50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- Start of Dessert Card Selection -->
+            <div class="specials-section-cards" data-category="dessert" style="display: none;">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-auto mb-4" style="max-width: 18rem;">
+                    <div class="card d-flex flex-column" style="width: 100%;">
+                        <div style="height: 150px; overflow: hidden;">
+                            <img class="card-img-top" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/36/17/4d/chocolate-orange-skoissant.jpg?w=1400&h=800&s=1" alt="Chocolate Orange Skoissant" style="width: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body flex-grow-1">
+                            <h5 class="card-title">Chocolate Orange Skoissant</h5>
+                            <p class="card-text">Delicious croissant on a Skewer, doused in chocolate with zesty orange filling. </p>
+                            <p class="price-tag">From £7.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-auto mb-4" style="max-width: 18rem;">
+                    <div class="card d-flex flex-column" style="width: 100%;">
+                        <div style="height: 150px; overflow: hidden;">
+                            <img class="card-img-top" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/b4/72/f5/passion-fruit-mango-cheesecake.jpg?w=800&h=500&s=1" alt="Passion & Mango Cheesecake" style="width: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body flex-grow-1">
+                            <h5 class="card-title">Passion Fruit & Mango Cheesecake</h5>
+                            <p class="card-text">Ripe and tangy passion fruit baked into a creamy cheesecake with mango dressing.</p>
+                            <p class="price-tag">From £9.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-auto mb-4" style="max-width: 18rem;">
+                    <div class="card d-flex flex-column" style="width: 100%;">
+                        <div style="height: 150px; overflow: hidden;">
+                            <img class="card-img-top" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/36/16/5a/lemon-meringue-cheesecake.jpg?w=500&h=-1&s=1" alt="Lemon Meringue" style="width: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body flex-grow-1">
+                            <h5 class="card-title">Lemon Meringue Cheesecake</h5>
+                            <p class="card-text">Creamy lemon cheesecake with a tangy lemon curd filling and a fluffy, meringue topping.</p>
+                            <p class="price-tag">From £8.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
-     </div>
-     <!-- Button to redirect to Full Menu -->
-     <div class="specials-full-menu-button">
-      <a href="menu.html">
-        <button class="full-menu-button" type="button">Full Menu →</button>
-      </a>
-     </div>
+        <div class="specials-full-menu-button">
+            <a href="menu.html">
+                <button class="full-menu-button" type="button">Full Menu →</button>
+            </a>
+        </div>
     </div>
   </section>
 
