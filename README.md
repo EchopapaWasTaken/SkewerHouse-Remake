@@ -1,6 +1,18 @@
+# Patchnotes 25/03/25
+# Branch Name 25/03/25
+## Specials Section
+- Imported and customised Bootstrap Cards
+- Added jQuery Functionality to be able to change which items being viewed
+- Customised each individual card to show a separate special offer.
+
+## Footer Section
+- Created Footer Section, using an imported Bootstrap one that is customised to suit needs of the website
+- Imported Social Media Icons with appropriate anchor and href tags, linking to Skewer House social media.
+- Placed Skewer House logo on footer.
+- Placed the footer on each html page.
 
 # Patchnotes 24/03/25
-# Branch Name "24/03/25
+# Branch Name 24/03/25
 ## NavBar
 - Fixed NavBar to have consistent styling across all pages
 - Added "Our Story" with appropriate link on NavBar
