@@ -216,3 +216,19 @@ button[type="submit"]:hover {
   margin: 30px auto 0;
   padding-bottom: 5px;
 }
+/*Contact Section End*/
+
+/*Menu Section Start*/
+.main-menu-buttons {
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.main-button.active {
+  background-color: #007bff; /* Example active button style */
+  color: white;
+}
+.main-menu-selection {
+  background-color: #FFFCF9;
+}
