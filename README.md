@@ -1,5 +1,20 @@
+# Patchnotes 26/03/25
+
+## Contact Form
+- Created and linked new "contactForm.js" as not to conflict with over implemented JS.
+- Imported Bootstrap Contact Form for ease of use.
+- Implemented appropraite EventListeners and alert() function to show to user that once "submit" button is clicked, an action is taken.
+- Embedded Google Maps location, using 'iframe' rather than using Google's API.
+
+## Menu
+- Created an interactive Menu with imported Bootstrap cards and EventListeners.
+- Button selection highlights as "active" to show user where they are.
+- JS hides Cards on non-active options.
+- Imported Bootstrap Featurettes which also swap out using JS.
+- Created and implemented Shared Starters section, which remains unaffected by Events.
+
 # Patchnotes 25/03/25
-# Branch Name 25/03/25
+
 ## Specials Section
 - Imported and customised Bootstrap Cards
 - Added jQuery Functionality to be able to change which items being viewed
