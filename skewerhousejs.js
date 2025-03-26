@@ -11,3 +11,37 @@ $(document).ready(function() {
       $('.specials-section-cards[data-category="' + category + '"]').show();
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const buttons = document.querySelectorAll('.main-menu-button, .main-button');
+  const cardContainers = document.querySelectorAll('.menu-card-container');
+  const featuretteContainers = document.querySelectorAll('.menu-featurette-container'); // Change to select all featurette containers
+
+  buttons.forEach(button => {
+      button.addEventListener('click', function () {
+          const category = this.dataset.category;
+
+          // Remove active class from all buttons
+          buttons.forEach(btn => btn.classList.remove('active'));
+
+          // Add active class to the clicked button
+          this.classList.add('active');
+
+          // Hide all card containers
+          cardContainers.forEach(container => {
+              container.style.display = 'none';
+          });
+
+          // Hide all featurette containers
+          featuretteContainers.forEach(container => {
+              container.style.display = 'none';
+          });
+
+          // Show the selected card container
+          document.getElementById(category + '-cards').style.display = 'flex';
+
+          // Show the selected featurette container
+          document.getElementById(category + '-featurette').style.display = 'block';
+      });
+  });
+});

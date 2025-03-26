@@ -1,3 +1,4 @@
+/*NavBar Section Start*/
 .navbar-brand img {
   max-height: 40px; 
 }
@@ -9,6 +10,7 @@ body {
 #navBar-container .navbar {
   background-color: #F8F1E7;
 }
+/*NavBar Section End*/
 
 /* Hero Section Start */
 .hero {
@@ -167,4 +169,129 @@ body {
 }
 /*Specials Section End */
 
-/*Footer Section Start */
+/*Contact Section Start */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+.contact-page-contact-form {
+  background-color: #FFFCF9;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.google-maps-location {
+  width: 300px;
+  margin: 30px auto 0;
+  padding-bottom: 5px;
+}
+/*Contact Section End*/
+
+/*Menu Section Start*/
+.main-menu-buttons {
+  display: flex;
+  justify-content: center;
+}
+.main-menu-button {
+  /* Your default button styles */
+  background-color: #f0f0f0; 
+  color: #333; 
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.main-menu-button.active, .main-button.active {
+  /* Active button styles */
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: 1px solid #0056b3;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.main-button {
+  /* Ensure main-button has the same default styles */
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Dark text */
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.main-menu-selection {
+  background-color: #FFFCF9;
+}
+.menu-card-container, .starters-card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.menu-card {
+  width: 18rem; /* Set fixed width */
+  margin: 10px; 
+}
+
+/* Adjust card width for smaller screens */
+@media (max-width: 768px) {
+  .menu-card {
+      width: 100%; /* Make cards full-width on smaller screens */
+  }
+}
+.starters-featurette-container {
+  display: flex;
+  justify-content: center;
+}
+.shared-starters-selection {
+  background-color: #FFFCF9;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+#skewerMenuImg {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  float: right;
+}
+/*Menu Section End*/
