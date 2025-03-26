@@ -1,3 +1,4 @@
+/*NavBar Section Start*/
 .navbar-brand img {
   max-height: 40px; 
 }
@@ -9,6 +10,7 @@ body {
 #navBar-container .navbar {
   background-color: #F8F1E7;
 }
+/*NavBar Section End*/
 
 /* Hero Section Start */
 .hero {
@@ -260,7 +262,7 @@ button[type="submit"]:hover {
 .main-menu-selection {
   background-color: #FFFCF9;
 }
-.menu-card-container {
+.menu-card-container, .starters-card-container {
   display: flex;
   flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
   justify-content: center;
@@ -278,8 +280,18 @@ button[type="submit"]:hover {
       width: 100%; /* Make cards full-width on smaller screens */
   }
 }
+.starters-featurette-container {
+  display: flex;
+  justify-content: center;
+}
+.shared-starters-selection {
+  background-color: #FFFCF9;
+  margin-top: 10px;
+  padding-top: 20px;
+}
 #skewerMenuImg {
   margin-bottom: 20px;
   border-radius: 20px;
   float: right;
 }
+/*Menu Section End*/
