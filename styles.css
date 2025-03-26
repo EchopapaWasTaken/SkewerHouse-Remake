@@ -167,4 +167,52 @@ body {
 }
 /*Specials Section End */
 
-/*Footer Section Start */
+/*Contact Section Start */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+.contact-page-contact-form {
+  background-color: #FFFCF9;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.google-maps-location {
+  width: 300px;
+  margin: 30px auto 0;
+  padding-bottom: 5px;
+}
