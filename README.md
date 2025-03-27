@@ -1,7 +1,7 @@
 # Patchnotes 27/03/25
 
 ## Modal
--Implemented a Booking Modal, utilising JavaScript to give appropriate errors messages when thrown and to display a confirmation of booking.
+- Implemented a Booking Modal, utilising JavaScript to give appropriate errors messages when thrown and to display a confirmation of booking.
 
 ## Styling 
 - Imported Google Fonts for text styling.
