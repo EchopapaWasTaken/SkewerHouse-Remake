@@ -1,3 +1,16 @@
+# Patchnotes 27/03/25
+
+## Modal
+-Implemented a Booking Modal, utilising JavaScript to give appropriate errors messages when thrown and to display a confirmation of booking.
+
+## Styling 
+- Imported Google Fonts for text styling.
+- Corrected placeholder CSS styling for buttons and text for better UI/UX Design.
+
+## NavBar
+- Enabled the Active NavBar option to better display to the User their navigation options.
+- Changed navBar container-fluid to container-d-flex to allow for 'relative' positioning in CSS
+
 # Patchnotes 26/03/25
 
 ## Contact Form
