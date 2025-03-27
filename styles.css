@@ -3,12 +3,39 @@
   max-height: 40px; 
 }
 
+.navbar-nav .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #8B0000;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #8B0000;
+}
+
 body {
   background-color: #F8F1E7;
 }
 
+#navBar-container {
+  position: relative;
+}
+
 #navBar-container .navbar {
   background-color: #F8F1E7;
+  font-family: "Poppins", sans-serif;
+}
+
+.book-table-btn {
+  background-color: #F8F1E7; 
+  color: #8B0000; 
+  border-color: #8B0000;
+}
+
+.book-table-btn:hover {
+  background-color: #8B0000; 
+  color: #F8F1E7; 
+  border-color: #8B0000;
 }
 /*NavBar Section End*/
 
@@ -52,12 +79,31 @@ body {
 .hero h2 {
   font-size: 3em;
   margin-bottom: 20px;
+  font-family: "Lora", serif;
+  color: #F8F1E7
 }
 
 .hero p {
   font-size: 1.2em;
   padding: 10px;
   border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  color: #F8F1E7;
+}
+
+.book-now-btn {
+  background-color: #8B0000; 
+  color: #F8F1E7; 
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.book-now-btn:hover {
+  background-color: #BD8279;
+  color: #1d1d1d;
+  transition: all 0.15;
 }
 /* Hero Section End */
 
@@ -90,48 +136,83 @@ body {
 }
 
 .welcome-section h2 {
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 10px;
+  font-family: "Lora", serif;
+  font-weight: bold;
 }
 
 .welcome-section p {
   font-size: 1.1em;
   margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 .welcome-section .button {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #8B0000;
+  color: #F8F1E7;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 100px;
 }
 
 .welcome-section .button:hover {
-  background-color: #367c39;
-  /* Placeholder until I style buttons */
+  background-color: #BD8279;
+  color: #1d1d1d
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .welcome-section {
-    flex-direction: column;
-    text-align: left; /* Change to left alignment on small screens */
+      flex-direction: column;
+      text-align: left;
   }
 
   .welcome-section img {
-    max-width: 80%;
-    margin-bottom: 20px;
-    margin-right: auto; /* Push image to the left on small screens*/
+      max-width: 80%;
+      margin-bottom: 20px;
+      margin-right: auto;
   }
 
   .welcome-section-text {
-    position: absolute; /* Keep absolute positioning on small screens */
-    top: 20px;
-    right: 20px;
-    width: 80%; /* Adjust width as needed on small screens */
-    text-align: right; /* Keep right alignment on small screens */
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 80%;
+      text-align: right;
+      padding: 10px;
+  }
+
+  .welcome-section-text p {
+      font-size: 1em;
+      line-height: 1.6;
+  }
+
+  .welcome-section-text h2 {
+      font-size: 1.8em;
+  }
+}
+
+/* PC adjustments */
+@media (min-width: 769px) {
+  .welcome-section-text {
+      position: absolute; /* Keep absolute positioning for PC */
+      top: 20px; /* Keep top 20px for PC */
+      right: 20px; /* Keep right 20px for PC */
+      width: 60%; /* Adjust width for PC */
+      padding: 50px; /* Adjust padding for PC */
+      text-align: right; /* Keep right alignment for PC */
+  }
+
+  .welcome-section-text p {
+      font-size: 1.2em;
+      line-height: 1.8;
+  }
+
+  .welcome-section-text h2 {
+      font-size: 2.5em;
   }
 }
 
@@ -152,11 +233,60 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.specials-section-content h1 {
+  font-family: "Lora", serif;
+}
+
+.card-title {
+  font-family: "Lora", serif;
+  font-weight: 600;
+}
+
+.card-body {
+  background-color: #FFFCF9;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+}
+.card:hover {
+  opacity: 0.35;
+  transition: all 0.15s;
+  cursor: pointer;
+}
 .specials-button {
-  margin-right: 8px;
+  margin-right: 20px;
+  background-color: #F8F1E7;
+  color: #1d1d1d;
+  border-radius: 5px;
+  border: none;
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  font-family: "Poppins", sans-serif;
+}
+.specials-button:hover{
+  cursor: pointer;
+  background-color: #BD8279;
+  color: #1d1d1d;
 }
 .price-tag {
   font-weight: bold;
+}
+.full-menu-button {
+  background-color: #8B0000;
+  color: #F8F1E7;
+  border-radius: 5px;
+  border: none;
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  font-family: "Poppins", sans-serif;
+}
+.full-menu-button:hover {
+  cursor: pointer;
+  background-color: #BD8279;
+  color: #1d1d1d;
 }
 .specials-full-menu-button {
   justify-content: center;
@@ -164,12 +294,22 @@ body {
   padding-bottom: 20px;
 }
 .specials-button.active {
-  background-color: #007bff; /* Example active button style */
-  color: white;
+  background-color: #8B0000; 
+  color: #F8F1E7;
 }
 /*Specials Section End */
 
 /*Contact Section Start */
+.contact-page-text-content h1 {
+  font-family: "Lora", serif;
+  font-size: 2.5em;
+}
+
+.contact-page-text-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+} 
+
 form {
   max-width: 400px;
   margin: 20px auto;
@@ -196,21 +336,28 @@ textarea {
 }
 
 button[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #8B0000;
+  color: #F8F1E7;
   padding: 10px 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #BD8279;
+  color: #1d1d1d;
 }
 .contact-page-contact-form {
   background-color: #FFFCF9;
   padding-top: 20px;
   margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+#contact-form-header {
+  text-align: center;
 }
 
 .google-maps-location {
@@ -221,52 +368,95 @@ button[type="submit"]:hover {
 /*Contact Section End*/
 
 /*Menu Section Start*/
+.menu-page-text-content h2 {
+  font-family: "Lora", serif;
+  font-size: 2.5em;
+}
+
+.menu-page-text-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+}
+
 .main-menu-buttons {
   display: flex;
   justify-content: center;
 }
 .main-menu-button {
-  /* Your default button styles */
-  background-color: #f0f0f0; 
-  color: #333; 
-  border: 1px solid #ccc;
+  background-color: #F8F1E7; 
+  color: #1d1d1d; 
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease; 
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 10px;
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  font-family: "Poppins", sans-serif;
 }
 
 .main-menu-button.active, .main-button.active {
-  /* Active button styles */
-  background-color: #007bff; /* Blue background */
-  color: white; /* White text */
-  border: 1px solid #0056b3;
+  background-color: #8B0000; 
+  color: #F8F1E7; 
+  border: none;
+  border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 10px;
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
 }
 
 .main-button {
-  /* Ensure main-button has the same default styles */
-  background-color: #f0f0f0; /* Light gray background */
-  color: #333; /* Dark text */
-  border: 1px solid #ccc;
+  background-color: #F8F1E7; 
+  color: #1d1d1d; 
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease; 
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 10px;
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-button:hover, .main-menu-button:hover {
+  cursor: pointer;
+  background-color: #BD8279;
+  color: #1d1d1d;
+
 }
 .main-menu-selection {
   background-color: #FFFCF9;
 }
+
+.main-menu-selection p {
+  font-family: "Poppins", sans-serif;
+}
+
+
 .menu-card-container, .starters-card-container {
   display: flex;
   flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
   justify-content: center;
   padding-bottom: 20px;
+}
+
+.card-body .card-subtitle.mb-2.text-muted {
+  color: #af8c35 !important;
+  font-size: 0.9em;
 }
 
 .menu-card {
@@ -289,9 +479,42 @@ button[type="submit"]:hover {
   margin-top: 10px;
   padding-top: 20px;
 }
+
+.shared-starters-selection p {
+  font-family: "Poppins", sans-serif;
+}
+
+.featurette-heading {
+  font-family: "Lora", serif;
+}
+
 #skewerMenuImg {
   margin-bottom: 20px;
   border-radius: 20px;
   float: right;
 }
 /*Menu Section End*/
+
+/*Our Story Section Start*/
+.placeholderContent h2 {
+  font-family: "Lora", serif;
+  font-size: 2.5em;
+}
+
+.placeholderContent p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+}
+/*Our Story Section End*/
+
+/*Misc Start*/
+#submitBookingBtn {
+  background-color: #8B0000;
+  border: none;
+}
+
+#skewer-house-footer {
+  font-family: "Poppins", sans-serif;
+}
+
+/*Misc End*/
